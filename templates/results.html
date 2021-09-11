@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Story of cheems</title>
+
+</head>
+
+<style>
+    body {
+        background-color: rgb(230, 172, 96);
+    }
+
+    div.contained {
+        position: absolute;
+        max-width: 45%;
+        max-height: 45%;
+        top: 50%;
+        left: 50%;
+        overflow: visible;
+    }
+
+    img.vids {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: -50%;
+        margin-left: -40%;
+        vertical-align: middle;
+    }
+
+    .botbut {
+        background-color: #ffc107;
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+    }
+
+    .botbut:hover {
+        background-color: #b8d451;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="contained">
+        <img class="vids" src="{{ url_for('video_feed') }}">
+        <br>
+        <input class="botbut" type="button" value="Previous" onclick="history.back()">
+    </div>
+</body>
+
+</html>

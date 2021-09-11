@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Story of cheems</title>
+</head>
+<style>
+    .contained {
+        position:relative;
+        max-width: 45%;
+        max-height: 45%;
+        margin-top: 20%;
+        margin-left: 40%;
+        overflow: visible;
+        background-color: rgb(230, 172, 96);
+    }
+    .botbut {
+        background-color: #ffc107;
+        border: none;
+        color: black;
+        padding: 16px 16px;
+        
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition: 0.3s;
+    }
+    .botbut:hover {
+        background-color: #b8d451;
+        color: white;
+    }
+    label {
+        text-decoration-style: solid;
+        font-weight: bold;
+        color: green;
+        font-size: large;
+    }
+</style>
+
+<body class='contained'>
+
+
+    <form action="/res" method="POST">
+
+        <label for="brightness">Brightness. </label>
+        <input type="text" name="brightness" placeholder="0-100">
+        <br>
+        <label for="blur">Blur it now</label>
+        <input type="text" name="blur" placeholder="0-100">
+        <br>
+        <input class="botbut" type="submit" value="submit" >
+        <br>
+    </form>
+
+
+</body>
+
+</html>
